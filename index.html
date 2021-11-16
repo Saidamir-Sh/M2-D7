@@ -542,20 +542,29 @@
           let newLink = document.createElement('a')
           newLink.innerText = 'Beauty'
           newLink.classList.add("text-muted", "p-2")
-          navNode.appendChild(newLink)
+          navNode.appendChild(newLink) 
+
           // EX12) Write a function to change the color of the main title
           let titleNode  = document.querySelector('.jumbotron  h1')
           titleNode.style.color = 'green'
+
           // EX13) Write a function to change the background of the jumbotron
           let jumbotronNode = document.querySelector('.jumbotron')
           jumbotronNode.classList.remove('bg-dark');
           jumbotronNode.style.backgroundColor = "BurlyWood";
+
           // EX14) Write a function to remove all the links under "Elsewhere"
           let  elseWhereNode = document.querySelector('aside div:nth-child(3)  ol') 
           let listLinks = document.querySelector('aside:last-child ol > li')
           elseWhereNode.innerHTML = ' '
           
           // EX15) Write a function to change the column size for heading in jumbotron
+          let jumbotronDivNode = document.querySelector('.jumbotron div')
+          jumbotronDivNode.classList.remove('col-md-6')
+          jumbotronDivNode.classList.add('col-md-8')
+
+
+
           // EX16) Write a function to remove the "Search" magnifying glass icon
           // EX17) Write a function to trim just the first 50 characters in the first paragraph for each blog post
           // EX18) Write a function and attach it to the "Newer" button, to add new Blog Post (just div and title)
